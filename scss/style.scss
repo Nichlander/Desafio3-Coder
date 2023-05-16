@@ -1,0 +1,27 @@
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/header";
+@import "partials/navbar";
+@import "partials/main-home";
+@import "partials/footer";
+@import "partials/media-query";
+@import "partials/demas";
+@import "partials/button";
+
+@mixin justify{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer{
+    @include justify;
+}
+
+img{
+    transition: transform .5s;
+}
+
+img:hover{
+    transform:scale(1.1);
+}

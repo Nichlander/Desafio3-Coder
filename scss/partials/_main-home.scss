@@ -1,0 +1,55 @@
+main {
+    background-color: $color-main;
+}
+
+.section-main-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #f5ebd2;
+    .main-text{
+        border: 1px solid black;
+        height: 400px;
+        width: 50%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .main-img{
+        height: 350px;
+        border: 1px solid black;
+    }
+}
+
+.section-main-info{
+    padding: 50px;
+    margin: auto; 
+    width: 80%;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 60px 100px 1fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "descripcion descripcion descripcion descripcion"
+    "card card card card"
+    ;
+    .seccion-main-h2 {
+        grid-area: titulo;
+    }
+    .seccion-main-p {
+        grid-area: descripcion;
+    }
+    .div-info{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .div-info img{
+        width: 60px;
+    }
+}
